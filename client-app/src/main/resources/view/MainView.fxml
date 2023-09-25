@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane fx:id="root" prefHeight="540.0" prefWidth="702.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.app.MainViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="275.0" layoutY="20.0" prefHeight="28.0" prefWidth="585.0" text="Restaurant Management System" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="10.0" />
+      <VBox layoutX="30.0" layoutY="38.0" prefHeight="114.0" prefWidth="349.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="38.0">
+         <children>
+            <Label prefHeight="16.0" prefWidth="100.0" text="Name" />
+            <TextField fx:id="txtName" />
+            <Label prefHeight="16.0" prefWidth="100.0" text="Contact " />
+            <TextField fx:id="txtContact" />
+         </children>
+      </VBox>
+      <TableView fx:id="tblOrder" layoutX="10.0" layoutY="333.0" prefHeight="121.0" prefWidth="580.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <columns>
+          <TableColumn prefWidth="155.0" text="Name" />
+            <TableColumn prefWidth="168.0" text="Item Id" />
+            <TableColumn prefWidth="142.0" text="Quantity" />
+            <TableColumn prefWidth="170.0" text="Status" />
+        </columns>
+      </TableView>
+      <HBox layoutX="23.0" layoutY="158.0" prefHeight="144.0" prefWidth="651.0">
+         <children>
+            <ImageView fx:id="imvPizza" fitHeight="140.0" fitWidth="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/pizza.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImvFish_Bun" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/Fish-Bun.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImvSubmarine" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/Submarine-Vegetable.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="Imv_Sausage_Bun" fitHeight="133.0" fitWidth="188.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/three-buns-with-sauce.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="313.0" prefHeight="57.0" prefWidth="200.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>
