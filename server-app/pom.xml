@@ -20,8 +20,11 @@
             <artifactId>javafx-fxml</artifactId>
             <version>19.0.2</version>
         </dependency>
-
-
+        <dependency>
+            <groupId>lk.ijse.dep11</groupId>
+            <artifactId>shared</artifactId>
+            <version>1.0.0</version>
+        </dependency>
     </dependencies>
 
 
