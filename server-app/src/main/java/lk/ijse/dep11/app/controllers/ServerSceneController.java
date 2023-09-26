@@ -1,6 +1,8 @@
 package lk.ijse.dep11.app.controllers;
 
 import javafx.application.Platform;
+import javafx.scene.control.TableView;
+import javafx.scene.layout.AnchorPane;
 import shared.Order;
 
 import java.io.*;
@@ -8,6 +10,9 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 public class ServerSceneController {
+    public AnchorPane root;
+    public TableView tblOrder;
+
     public void initialize(){
 
         new Thread(this::startServer).start();
@@ -26,7 +31,7 @@ public class ServerSceneController {
 
                     while(true){
                         Order order = (Order) ois.readObject();
-                        Platform.runLater(() -> tblOrder.getItems().add(order));
+//                        Platform.runLater(() -> tblOrder.getItems().add(order));
 
                     }
                 } catch (EOFException e) {
